@@ -7,13 +7,14 @@ namespace recursion
     static void Main(string[] args)
     {
       double[] testArray = GetCoins(4.99, 0);
+      string[] coins = {"Quarters", ""};
 
       for (int i = 0; i < testArray.Length; i++)
       {
         Console.WriteLine(testArray[i]);
       }
     }
-    
+
     static double[] resultArray = { 0, 0, 0, 0 };
     public static double[] GetCoins(double n, int i)
     {
